@@ -120,18 +120,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    # user_text = input("Enter you comand: ").lower()
-    # if user_text in ["good bye", "exit", "close"]:
-    #     com = "exit"
-    #     func = greting(com)
-    #     print(func())
-    # elif user_text in ["show all"]:
-    #     com = "show"
-    #     func = greting(com)
-    #     print(func())
-    #     continue
-    # elif user_text in ["hello"]:
-    #     func = greting(user_text)
-    #     print(func())
-    #     continue
