@@ -1,0 +1,31 @@
+USERS = {
+    "Ivan": "98 955 65 45",
+    "Joao": "98555 98 75",
+    "Kira": "98 5454 56 1",
+    "Leandro": "95 123456 45",
+    "Kiril": "93 2165 2 33",
+    "Zaur": "91 984532 2",
+    "Maks": "98 9545 21 21",
+    "Telmo": "98 00 22 11 3",
+}
+
+
+def chage_handler(*args, **kwargs):
+    name, phone = args
+    ind_name = USERS.get(name)
+    if ind_name == None:
+        return f"This contat:{name}, not in list"
+    else:
+        USERS.update({name: phone})
+    return f"{name} was change"
+
+print(chage_handler("Temote", "9523111151"))
+
+
+
+# def show_all_handler(date):
+#     for i in date.keys():
+#         return (f"{i}: {date[i]}")
+
+
+# print(show_all_handler(USERS))
